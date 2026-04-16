@@ -3,56 +3,331 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name | Personal Site</title>
+  <title>Vijaya Supreetha Gurrala | Data & Analytics Consultant</title>
+  <meta name="description" content="Portfolio of Vijaya Supreetha Gurrala — Data & Analytics Consultant with 5+ years in consulting, specializing in SQL, Python, Power BI, and Tableau." />
+  <meta property="og:title" content="Vijaya Supreetha Gurrala | Data & Analytics Consultant" />
+  <meta property="og:description" content="Analytics consultant with 5+ years in consulting, specializing in dashboard development, data visualization, and executive-ready insights." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="hero">
-    <img src="https://via.placeholder.com/140" alt="Profile photo placeholder" class="avatar" />
-    <h1>Your Name</h1>
-    <p class="tagline">Software Engineer | Builder | Learner</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
 
-  <main class="container">
-    <section id="about" class="card">
-      <h2>About Me</h2>
-      <p>
-        I am a software engineer interested in web development, backend systems,
-        and building useful products.
-      </p>
-    </section>
+  <!-- Nav -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">VSG</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#tools">Tools</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <section id="projects" class="card">
-      <h2>Projects</h2>
-
-      <div class="project">
-        <h3>Project One</h3>
-        <p>A brief description of what this project does.</p>
-        <a href="https://github.com/yourusername/project-one" target="_blank">GitHub Repo</a>
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-photo">
+        <img src="https://ui-avatars.com/api/?name=Vijaya+Supreetha&size=160&background=6c63ff&color=fff&rounded=true&bold=true&font-size=0.38" alt="Vijaya Supreetha Gurrala" />
       </div>
-
-      <div class="project">
-        <h3>Project Two</h3>
-        <p>A brief description of what this project does.</p>
-        <a href="https://github.com/yourusername/project-two" target="_blank">GitHub Repo</a>
+      <h1>Vijaya Supreetha Gurrala</h1>
+      <p class="hero-title">Data &amp; Analytics Consultant</p>
+      <p class="hero-subtitle">SQL &middot; Python &middot; Power BI &middot; Tableau &middot; 5+ Years in Consulting</p>
+      <div class="hero-cta">
+        <a href="https://www.linkedin.com/in/supreetha-gurrala-238869126/" target="_blank" class="btn btn-primary"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/supreetha9" target="_blank" class="btn btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
+        <a href="mailto:supreethagurrala@gmail.com" class="btn btn-outline"><i class="fa-solid fa-envelope"></i> Email</a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="contact" class="card">
-      <h2>Contact</h2>
-      <p>Email: you@example.com</p>
-      <p>GitHub: <a href="https://github.com/yourusername" target="_blank">@yourusername</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">yourprofile</a></p>
-    </section>
-  </main>
+  <!-- About -->
+  <section class="section section-gray" id="about">
+    <div class="container">
+      <h2 class="section-title fade-in">About Me</h2>
+      <div class="about-content fade-in">
+        <p>
+          I'm an analytics consultant with over five years of experience at Infosys and Accenture,
+          specializing in dashboard development, data visualization, and delivering executive-ready
+          insights that drive business decisions. I work with SQL, Python, and BI tools like Power BI
+          and Tableau to turn complex business questions into structured analyses.
+        </p>
+        <p>
+          I'm passionate about data preparation, warehousing, and quality assurance across enterprise
+          sources. I thrive on collaborating with cross-functional teams and communicating data-driven
+          recommendations to both technical and non-technical stakeholders.
+        </p>
+        <p class="about-auth">Authorized to work in the U.S. — No sponsorship required.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- My Tool Set -->
+  <section class="section" id="tools">
+    <div class="container">
+      <h2 class="section-title fade-in">My Tool Set</h2>
+      <div class="tool-grid fade-in">
+        <div class="tool-card">
+          <i class="devicon-python-plain colored"></i>
+          <span>Python</span>
+        </div>
+        <div class="tool-card">
+          <i class="devicon-postgresql-plain colored"></i>
+          <span>PostgreSQL</span>
+        </div>
+        <div class="tool-card">
+          <i class="devicon-mysql-plain colored"></i>
+          <span>MySQL</span>
+        </div>
+        <div class="tool-card">
+          <i class="devicon-googlecloud-plain colored"></i>
+          <span>BigQuery</span>
+        </div>
+        <div class="tool-card">
+          <i class="devicon-pandas-plain colored"></i>
+          <span>pandas</span>
+        </div>
+        <div class="tool-card">
+          <i class="devicon-numpy-plain colored"></i>
+          <span>numpy</span>
+        </div>
+        <div class="tool-card">
+          <i class="devicon-r-plain colored"></i>
+          <span>R</span>
+        </div>
+        <div class="tool-card">
+          <i class="fa-solid fa-chart-pie tool-icon-fa"></i>
+          <span>Power BI</span>
+        </div>
+        <div class="tool-card">
+          <i class="fa-solid fa-chart-line tool-icon-fa"></i>
+          <span>Tableau</span>
+        </div>
+        <div class="tool-card">
+          <i class="fa-solid fa-database tool-icon-fa"></i>
+          <span>SQL</span>
+        </div>
+        <div class="tool-card">
+          <i class="fa-solid fa-file-excel tool-icon-fa"></i>
+          <span>Excel</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- My Skill Set -->
+  <section class="section section-gray" id="skills">
+    <div class="container">
+      <h2 class="section-title fade-in">My Skill Set</h2>
+      <div class="skill-grid fade-in">
+        <div class="skill-card">Dashboard Design</div>
+        <div class="skill-card">KPI Reporting</div>
+        <div class="skill-card">Data Storytelling</div>
+        <div class="skill-card">Data Profiling</div>
+        <div class="skill-card">Data Cleansing</div>
+        <div class="skill-card">Data Transformation</div>
+        <div class="skill-card">Star Schema Design</div>
+        <div class="skill-card">ETL Pipelines</div>
+        <div class="skill-card">Data Validation</div>
+        <div class="skill-card">Joins &amp; CTEs</div>
+        <div class="skill-card">Window Functions</div>
+        <div class="skill-card">Advanced Excel</div>
+        <div class="skill-card">Pivot Tables</div>
+        <div class="skill-card">Data Normalization</div>
+        <div class="skill-card">Exploratory Analysis</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="section" id="experience">
+    <div class="container">
+      <h2 class="section-title fade-in">Experience</h2>
+      <div class="experience-grid">
+
+        <div class="exp-card fade-in">
+          <div class="exp-header">
+            <div>
+              <h3>Senior Associate Consultant — Data &amp; Business Analytics</h3>
+              <p class="exp-company">Infosys</p>
+            </div>
+            <span class="exp-date">Dec 2022 — Jul 2024</span>
+          </div>
+          <ul class="exp-list">
+            <li>Partnered with cross-functional stakeholders to profile and analyze large transactional datasets, surfacing operational inefficiencies and delivering actionable recommendations.</li>
+            <li>Designed and deployed Power BI dashboards tracking order fulfillment, lead times, and inventory trends for leadership business reviews.</li>
+            <li>Used SQL and Python (pandas) to profile, cleanse, and transform data from multiple enterprise sources for downstream dashboards.</li>
+            <li>Automated daily GL reconciliation using SQL validation checks and Python scripts, reducing manual effort and improving financial reporting accuracy.</li>
+          </ul>
+        </div>
+
+        <div class="exp-card fade-in">
+          <div class="exp-header">
+            <div>
+              <h3>Application Development Analyst</h3>
+              <p class="exp-company">Accenture</p>
+            </div>
+            <span class="exp-date">Aug 2018 — Jun 2021</span>
+          </div>
+          <ul class="exp-list">
+            <li>Conducted exploratory analyses on historical sales, order, and inventory data to identify trends and improvement opportunities for client teams.</li>
+            <li>Performed consultative ad-hoc SQL analysis on ERP datasets, investigating data issues and supporting evolving reporting requirements.</li>
+            <li>Designed and maintained Power BI dashboards and reports tracking key operational KPIs for real-time performance visibility.</li>
+            <li>Led requirements gathering sessions with stakeholders, translating business questions into structured datasets and reports.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section section-gray" id="projects">
+    <div class="container">
+      <h2 class="section-title fade-in">Projects</h2>
+      <div class="project-grid">
+
+        <div class="project-card fade-in">
+          <div class="project-accent accent-tableau"></div>
+          <div class="project-body">
+            <h3>People Analytics Dashboard</h3>
+            <p class="project-subtitle">HR Workforce Insights</p>
+            <div class="project-tags">
+              <span class="tag">Tableau</span>
+              <span class="tag">Python</span>
+              <span class="tag">pandas</span>
+            </div>
+            <p>Built an interactive Tableau dashboard for HR stakeholders covering workforce overview, demographics, and compensation analysis. Designed drill-down views with dynamic filtering by department, job title, location, and demographics. Generated a realistic 8,950-record HR dataset using Python.</p>
+          </div>
+        </div>
+
+        <div class="project-card fade-in">
+          <div class="project-accent accent-sql"></div>
+          <div class="project-body">
+            <h3>Data Warehouse Design &amp; Analytics</h3>
+            <p class="project-subtitle">Bronze–Silver–Gold Architecture</p>
+            <div class="project-tags">
+              <span class="tag">SQL</span>
+              <span class="tag">PostgreSQL</span>
+            </div>
+            <p>Architected a PostgreSQL-based data warehouse consolidating CRM and ERP data into a single reporting-ready layer. Engineered a layered ingestion pipeline (Bronze → Silver → Gold) with data profiling, deduplication, and normalization. Designed a star schema serving as the single source of truth.</p>
+          </div>
+        </div>
+
+        <div class="project-card fade-in">
+          <div class="project-accent accent-python"></div>
+          <div class="project-body">
+            <h3>Loan Portfolio Performance &amp; Risk Assessment</h3>
+            <p class="project-subtitle">Lending Analytics</p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">pandas</span>
+              <span class="tag">numpy</span>
+            </div>
+            <p>Defined analytical KPIs and performed end-to-end analysis of loan portfolio data to evaluate lending performance and borrower risk. Applied time-series analysis for monthly trends and risk segmentation (good vs. bad loans). Synthesized findings into executive-ready insights for strategic risk evaluation.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Education & Certifications -->
+  <section class="section" id="education">
+    <div class="container">
+      <h2 class="section-title fade-in">Education &amp; Certifications</h2>
+      <div class="edu-grid">
+
+        <div class="edu-card fade-in">
+          <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <h3>Bachelor of Technology</h3>
+          <p class="edu-field">Electronics &amp; Communication Engineering</p>
+          <p class="edu-school">GITAM University</p>
+          <p class="edu-meta">2014 — 2018 &middot; CGPA: 8.3 / 10</p>
+        </div>
+
+        <div class="edu-card fade-in">
+          <div class="edu-icon"><i class="fa-solid fa-certificate"></i></div>
+          <h3>Google Data Analytics Professional Certificate</h3>
+          <p class="edu-field">Google</p>
+          <p class="edu-desc">End-to-end analytics training covering data preparation, analysis, and visualization using SQL, spreadsheets, Tableau, and R.</p>
+        </div>
+
+        <div class="edu-card fade-in">
+          <div class="edu-icon"><i class="fa-solid fa-certificate"></i></div>
+          <h3>Deloitte — Data Analytics Job Simulation</h3>
+          <p class="edu-field">Forage</p>
+          <p class="edu-desc">Completed a Deloitte-designed simulation focused on data analysis and forensic technology; built a Tableau dashboard to present analytical insights.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section class="section section-gray" id="achievements">
+    <div class="container">
+      <h2 class="section-title fade-in">Achievements</h2>
+      <div class="achieve-grid">
+
+        <div class="achieve-card fade-in">
+          <div class="achieve-icon"><i class="fa-solid fa-award"></i></div>
+          <div>
+            <h3>Insta Rise Award</h3>
+            <p class="achieve-company">Infosys &middot; Mar 2023, Dec 2023</p>
+            <p>Recognized for accelerating client delivery timelines and improving reporting efficiency through analytics-driven solutions.</p>
+          </div>
+        </div>
+
+        <div class="achieve-card fade-in">
+          <div class="achieve-icon"><i class="fa-solid fa-star"></i></div>
+          <div>
+            <h3>Sparkling Star Award</h3>
+            <p class="achieve-company">Accenture &middot; Apr 2019, Apr 2020</p>
+            <p>Received direct client recognition for strong ownership, on-time delivery, and proactive problem-solving on consulting engagements.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="container contact-section">
+      <h2 class="section-title fade-in">Let's Connect</h2>
+      <p class="contact-text fade-in">I'm always open to discussing data analytics, new opportunities, or collaboration. Feel free to reach out!</p>
+      <div class="contact-links fade-in">
+        <a href="mailto:supreethagurrala@gmail.com" class="contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <span>supreethagurrala@gmail.com</span>
+        </a>
+        <a href="https://github.com/supreetha9" target="_blank" class="contact-item">
+          <i class="fa-brands fa-github"></i>
+          <span>github.com/supreetha9</span>
+        </a>
+        <a href="https://www.linkedin.com/in/supreetha-gurrala-238869126/" target="_blank" class="contact-item">
+          <i class="fa-brands fa-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+      </div>
+    </div>
+  </section>
 
   <footer>
-    <p>© 2026 Your Name</p>
+    <p>&copy; 2026 Vijaya Supreetha Gurrala</p>
   </footer>
 
   <script src="script.js"></script>
