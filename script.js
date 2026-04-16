@@ -5,27 +5,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const navAnchors = navLinks.querySelectorAll("a");
   const sections = document.querySelectorAll("section[id]");
 
-  // Scroll-reveal via Intersection Observer
-  const fadeEls = document.querySelectorAll(".fade-in");
-  const revealObserver = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-          revealObserver.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.15 }
-  );
-  fadeEls.forEach((el) => revealObserver.observe(el));
+  AOS.init({
+    duration: 800,
+    easing: "ease-out",
+    once: true,
+    offset: 80,
+  });
 
-  // Sticky nav shadow on scroll
   window.addEventListener("scroll", () => {
     navbar.classList.toggle("scrolled", window.scrollY > 20);
   });
 
-  // Active section highlighting
   const sectionObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -44,13 +34,11 @@ document.addEventListener("DOMContentLoaded", () => {
   );
   sections.forEach((sec) => sectionObserver.observe(sec));
 
-  // Mobile hamburger toggle
   hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("open");
     navLinks.classList.toggle("open");
   });
 
-  // Close mobile nav on link click
   navAnchors.forEach((a) => {
     a.addEventListener("click", () => {
       hamburger.classList.remove("open");

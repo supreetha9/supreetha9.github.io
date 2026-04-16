@@ -10,9 +10,10 @@
   <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -20,7 +21,7 @@
   <!-- Nav -->
   <nav class="navbar" id="navbar">
     <div class="nav-container">
-      <a href="#hero" class="nav-logo">VSG</a>
+      <a href="#hero" class="nav-logo">Supreetha</a>
       <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
         <span></span><span></span><span></span>
       </button>
@@ -40,9 +41,10 @@
   <section class="hero" id="hero">
     <div class="hero-content">
       <div class="hero-photo">
-        <img src="https://ui-avatars.com/api/?name=Vijaya+Supreetha&size=160&background=6c63ff&color=fff&rounded=true&bold=true&font-size=0.38" alt="Vijaya Supreetha Gurrala" />
+        <img src="Profile_Photo.jpg" alt="Vijaya Supreetha Gurrala" />
       </div>
       <h1>Vijaya Supreetha Gurrala</h1>
+      <div class="hero-line"></div>
       <p class="hero-title">Data &amp; Analytics Consultant</p>
       <p class="hero-subtitle">SQL &middot; Python &middot; Power BI &middot; Tableau &middot; 5+ Years in Consulting</p>
       <div class="hero-cta">
@@ -56,20 +58,50 @@
   <!-- About -->
   <section class="section section-gray" id="about">
     <div class="container">
-      <h2 class="section-title fade-in">About Me</h2>
-      <div class="about-content fade-in">
+      <h2 class="section-title" data-aos="fade-up">About Me</h2>
+      <div class="about-intro" data-aos="fade-up" data-aos-delay="100">
         <p>
-          I'm an analytics consultant with over five years of experience at Infosys and Accenture,
-          specializing in dashboard development, data visualization, and delivering executive-ready
-          insights that drive business decisions. I work with SQL, Python, and BI tools like Power BI
-          and Tableau to turn complex business questions into structured analyses.
+          Welcome to my portfolio website! I'm Supreetha, a data analyst with over five years
+          of experience at <strong>Infosys</strong> and <strong>Accenture</strong>. I love working
+          with data, whether it's building dashboards in Power BI and Tableau, writing SQL queries,
+          or using Python to clean up messy datasets. I like to simplify things. If a report or
+          a dashboard can't tell the story clearly, it's not done yet. I have an eye for the small
+          details that make a big difference in how data gets understood and used.
         </p>
         <p>
-          I'm passionate about data preparation, warehousing, and quality assurance across enterprise
-          sources. I thrive on collaborating with cross-functional teams and communicating data-driven
-          recommendations to both technical and non-technical stakeholders.
+          Over the years I've also enjoyed mentoring junior analysts, leading requirements
+          sessions with stakeholders, and helping teams stay aligned on what the data is really
+          saying. I'm always curious and open to learning, and I genuinely believe that the best
+          work happens when everyone on the team feels heard and supported.
         </p>
-        <p class="about-auth">Authorized to work in the U.S. — No sponsorship required.</p>
+        <p>
+          Outside of work, I love travelling and exploring new places, reading, gardening,
+          and trying out new recipes in the kitchen. Staying curious in all parts of life is
+          something I carry into my work every day.
+        </p>
+        <p>
+          Feel free to explore my projects and reach out if you'd like to connect on
+          <a href="https://www.linkedin.com/in/supreetha-gurrala-238869126/" target="_blank">LinkedIn</a>
+          or check out my work on <a href="https://github.com/supreetha9" target="_blank">GitHub</a>!
+        </p>
+        <p class="about-auth">Authorized to work in the U.S. | No sponsorship required.</p>
+      </div>
+      <div class="about-cards">
+        <div class="about-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="about-card-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+          <h3>Data Analysis</h3>
+          <p>Uncovering hidden insights within vast datasets is what excites me most. Through comprehensive exploration, I analyze data to unveil patterns, trends, and actionable recommendations that unlock real value.</p>
+        </div>
+        <div class="about-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="about-card-icon"><i class="fa-solid fa-chart-column"></i></div>
+          <h3>Data Visualization</h3>
+          <p>A visual representation speaks volumes. I craft engaging dashboards and interactive reports that illuminate insights, making data easier and more captivating for stakeholders to grasp the bigger picture.</p>
+        </div>
+        <div class="about-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="about-card-icon"><i class="fa-solid fa-lightbulb"></i></div>
+          <h3>Analytics Consulting</h3>
+          <p>As a consulting-trained analyst, I navigate complex business questions to extract meaningful information — providing insights that drive strategic growth, optimize processes, and uncover opportunities.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -77,51 +109,55 @@
   <!-- My Tool Set -->
   <section class="section" id="tools">
     <div class="container">
-      <h2 class="section-title fade-in">My Tool Set</h2>
-      <div class="tool-grid fade-in">
-        <div class="tool-card">
+      <h2 class="section-title" data-aos="fade-up">My Tool Set</h2>
+      <div class="tool-grid">
+        <div class="tool-card" data-aos="fade-up" data-aos-delay="0">
           <i class="devicon-python-plain colored"></i>
           <span>Python</span>
         </div>
-        <div class="tool-card">
+        <div class="tool-card" data-aos="fade-up" data-aos-delay="50">
           <i class="devicon-postgresql-plain colored"></i>
           <span>PostgreSQL</span>
         </div>
-        <div class="tool-card">
+        <div class="tool-card" data-aos="fade-up" data-aos-delay="100">
           <i class="devicon-mysql-plain colored"></i>
           <span>MySQL</span>
         </div>
-        <div class="tool-card">
+        <div class="tool-card" data-aos="fade-up" data-aos-delay="150">
           <i class="devicon-googlecloud-plain colored"></i>
           <span>BigQuery</span>
         </div>
-        <div class="tool-card">
+        <div class="tool-card" data-aos="fade-up" data-aos-delay="0">
           <i class="devicon-pandas-plain colored"></i>
           <span>pandas</span>
         </div>
-        <div class="tool-card">
+        <div class="tool-card" data-aos="fade-up" data-aos-delay="50">
           <i class="devicon-numpy-plain colored"></i>
           <span>numpy</span>
         </div>
-        <div class="tool-card">
+        <div class="tool-card" data-aos="fade-up" data-aos-delay="100">
           <i class="devicon-r-plain colored"></i>
           <span>R</span>
         </div>
-        <div class="tool-card">
+        <div class="tool-card" data-aos="fade-up" data-aos-delay="150">
           <i class="fa-solid fa-chart-pie tool-icon-fa"></i>
           <span>Power BI</span>
         </div>
-        <div class="tool-card">
+        <div class="tool-card" data-aos="fade-up" data-aos-delay="0">
           <i class="fa-solid fa-chart-line tool-icon-fa"></i>
           <span>Tableau</span>
         </div>
-        <div class="tool-card">
+        <div class="tool-card" data-aos="fade-up" data-aos-delay="50">
           <i class="fa-solid fa-database tool-icon-fa"></i>
           <span>SQL</span>
         </div>
-        <div class="tool-card">
+        <div class="tool-card" data-aos="fade-up" data-aos-delay="100">
           <i class="fa-solid fa-file-excel tool-icon-fa"></i>
           <span>Excel</span>
+        </div>
+        <div class="tool-card" data-aos="fade-up" data-aos-delay="150">
+          <i class="fa-solid fa-robot tool-icon-fa"></i>
+          <span>Gen AI Tools</span>
         </div>
       </div>
     </div>
@@ -130,8 +166,8 @@
   <!-- My Skill Set -->
   <section class="section section-gray" id="skills">
     <div class="container">
-      <h2 class="section-title fade-in">My Skill Set</h2>
-      <div class="skill-grid fade-in">
+      <h2 class="section-title" data-aos="fade-up">My Skill Set</h2>
+      <div class="skill-grid" data-aos="fade-up" data-aos-delay="100">
         <div class="skill-card">Dashboard Design</div>
         <div class="skill-card">KPI Reporting</div>
         <div class="skill-card">Data Storytelling</div>
@@ -154,10 +190,10 @@
   <!-- Experience -->
   <section class="section" id="experience">
     <div class="container">
-      <h2 class="section-title fade-in">Experience</h2>
+      <h2 class="section-title" data-aos="fade-up">Experience</h2>
       <div class="experience-grid">
 
-        <div class="exp-card fade-in">
+        <div class="exp-card" data-aos="fade-up" data-aos-delay="0">
           <div class="exp-header">
             <div>
               <h3>Senior Associate Consultant — Data &amp; Business Analytics</h3>
@@ -173,7 +209,7 @@
           </ul>
         </div>
 
-        <div class="exp-card fade-in">
+        <div class="exp-card" data-aos="fade-up" data-aos-delay="100">
           <div class="exp-header">
             <div>
               <h3>Application Development Analyst</h3>
@@ -196,10 +232,10 @@
   <!-- Projects -->
   <section class="section section-gray" id="projects">
     <div class="container">
-      <h2 class="section-title fade-in">Projects</h2>
+      <h2 class="section-title" data-aos="fade-up">Projects</h2>
       <div class="project-grid">
 
-        <div class="project-card fade-in">
+        <div class="project-card" data-aos="fade-up" data-aos-delay="0">
           <div class="project-accent accent-tableau"></div>
           <div class="project-body">
             <h3>People Analytics Dashboard</h3>
@@ -210,10 +246,11 @@
               <span class="tag">pandas</span>
             </div>
             <p>Built an interactive Tableau dashboard for HR stakeholders covering workforce overview, demographics, and compensation analysis. Designed drill-down views with dynamic filtering by department, job title, location, and demographics. Generated a realistic 8,950-record HR dataset using Python.</p>
+            <a href="https://public.tableau.com/app/profile/vijaya.supreetha.gurrala/viz/HRDashboard__3/HRSummary" target="_blank" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Dashboard</a>
           </div>
         </div>
 
-        <div class="project-card fade-in">
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
           <div class="project-accent accent-sql"></div>
           <div class="project-body">
             <h3>Data Warehouse Design &amp; Analytics</h3>
@@ -223,10 +260,11 @@
               <span class="tag">PostgreSQL</span>
             </div>
             <p>Architected a PostgreSQL-based data warehouse consolidating CRM and ERP data into a single reporting-ready layer. Engineered a layered ingestion pipeline (Bronze → Silver → Gold) with data profiling, deduplication, and normalization. Designed a star schema serving as the single source of truth.</p>
+            <a href="https://github.com/supreetha9/Data-Warehouse-Project" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> View on GitHub</a>
           </div>
         </div>
 
-        <div class="project-card fade-in">
+        <div class="project-card" data-aos="fade-up" data-aos-delay="200">
           <div class="project-accent accent-python"></div>
           <div class="project-body">
             <h3>Loan Portfolio Performance &amp; Risk Assessment</h3>
@@ -237,6 +275,7 @@
               <span class="tag">numpy</span>
             </div>
             <p>Defined analytical KPIs and performed end-to-end analysis of loan portfolio data to evaluate lending performance and borrower risk. Applied time-series analysis for monthly trends and risk segmentation (good vs. bad loans). Synthesized findings into executive-ready insights for strategic risk evaluation.</p>
+            <a href="https://github.com/supreetha9/Loan_Portfolio_Performance_and_Risk_Assessment" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> View on GitHub</a>
           </div>
         </div>
 
@@ -247,10 +286,10 @@
   <!-- Education & Certifications -->
   <section class="section" id="education">
     <div class="container">
-      <h2 class="section-title fade-in">Education &amp; Certifications</h2>
+      <h2 class="section-title" data-aos="fade-up">Education &amp; Certifications</h2>
       <div class="edu-grid">
 
-        <div class="edu-card fade-in">
+        <div class="edu-card" data-aos="fade-up" data-aos-delay="0">
           <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
           <h3>Bachelor of Technology</h3>
           <p class="edu-field">Electronics &amp; Communication Engineering</p>
@@ -258,14 +297,14 @@
           <p class="edu-meta">2014 — 2018 &middot; CGPA: 8.3 / 10</p>
         </div>
 
-        <div class="edu-card fade-in">
+        <div class="edu-card" data-aos="fade-up" data-aos-delay="100">
           <div class="edu-icon"><i class="fa-solid fa-certificate"></i></div>
           <h3>Google Data Analytics Professional Certificate</h3>
           <p class="edu-field">Google</p>
           <p class="edu-desc">End-to-end analytics training covering data preparation, analysis, and visualization using SQL, spreadsheets, Tableau, and R.</p>
         </div>
 
-        <div class="edu-card fade-in">
+        <div class="edu-card" data-aos="fade-up" data-aos-delay="200">
           <div class="edu-icon"><i class="fa-solid fa-certificate"></i></div>
           <h3>Deloitte — Data Analytics Job Simulation</h3>
           <p class="edu-field">Forage</p>
@@ -279,10 +318,10 @@
   <!-- Achievements -->
   <section class="section section-gray" id="achievements">
     <div class="container">
-      <h2 class="section-title fade-in">Achievements</h2>
+      <h2 class="section-title" data-aos="fade-up">Achievements</h2>
       <div class="achieve-grid">
 
-        <div class="achieve-card fade-in">
+        <div class="achieve-card" data-aos="fade-up" data-aos-delay="0">
           <div class="achieve-icon"><i class="fa-solid fa-award"></i></div>
           <div>
             <h3>Insta Rise Award</h3>
@@ -291,7 +330,7 @@
           </div>
         </div>
 
-        <div class="achieve-card fade-in">
+        <div class="achieve-card" data-aos="fade-up" data-aos-delay="100">
           <div class="achieve-icon"><i class="fa-solid fa-star"></i></div>
           <div>
             <h3>Sparkling Star Award</h3>
@@ -307,9 +346,9 @@
   <!-- Contact -->
   <section class="section" id="contact">
     <div class="container contact-section">
-      <h2 class="section-title fade-in">Let's Connect</h2>
-      <p class="contact-text fade-in">I'm always open to discussing data analytics, new opportunities, or collaboration. Feel free to reach out!</p>
-      <div class="contact-links fade-in">
+      <h2 class="section-title" data-aos="fade-up">Let's Connect</h2>
+      <p class="contact-text" data-aos="fade-up" data-aos-delay="100">I'm always open to discussing data analytics, new opportunities, or collaboration. Feel free to reach out!</p>
+      <div class="contact-links" data-aos="fade-up" data-aos-delay="200">
         <a href="mailto:supreethagurrala@gmail.com" class="contact-item">
           <i class="fa-solid fa-envelope"></i>
           <span>supreethagurrala@gmail.com</span>
@@ -330,6 +369,7 @@
     <p>&copy; 2026 Vijaya Supreetha Gurrala</p>
   </footer>
 
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
