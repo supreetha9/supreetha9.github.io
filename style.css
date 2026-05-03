@@ -598,6 +598,55 @@ img {
   color: var(--accent-hover);
 }
 
+/* ── Featured project (full-width hero card) ─────── */
+
+.featured-grid {
+  grid-template-columns: 1fr;
+  margin-bottom: 2rem;
+}
+
+.featured-project-card .project-body {
+  padding: 2rem 2.25rem;
+}
+
+.featured-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.75rem;
+}
+
+.accent-recon {
+  background: linear-gradient(90deg, #6c63ff, #00b894);
+}
+
+.project-bullets {
+  margin: 0.9rem 0 1.1rem 1.25rem;
+  padding: 0;
+  font-size: 0.93rem;
+  color: var(--text);
+}
+
+.project-bullets li {
+  margin-bottom: 0.45rem;
+  line-height: 1.6;
+}
+
+.subsection-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text);
+  margin: 1.25rem 0 1rem;
+  text-align: left;
+}
+
 /* ── Education & Certifications ────────────────── */
 
 .edu-grid {
