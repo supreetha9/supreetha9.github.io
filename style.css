@@ -545,6 +545,22 @@ img {
   background: linear-gradient(90deg, #3776ab, #ffd43b);
 }
 
+.accent-supply {
+  background: linear-gradient(90deg, #00b894, #0984e3);
+}
+
+.accent-saas {
+  background: linear-gradient(90deg, #6c63ff, #00cec9);
+}
+
+.accent-fintech {
+  background: linear-gradient(90deg, #2d3436, #00b894);
+}
+
+.accent-ops {
+  background: linear-gradient(90deg, #e17055, #fdcb6e);
+}
+
 .project-body {
   padding: 1.5rem;
 }
