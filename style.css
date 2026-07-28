@@ -226,6 +226,13 @@ img {
   font-family: "Crimson Text", Georgia, serif;
   font-size: 1.05rem;
   color: var(--text-muted);
+  margin-bottom: 0.35rem;
+}
+
+.hero-location {
+  font-family: "Crimson Text", Georgia, serif;
+  font-size: 0.95rem;
+  color: var(--text-muted);
   margin-bottom: 2rem;
 }
 
